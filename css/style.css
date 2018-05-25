@@ -1,0 +1,116 @@
+* { box-sizing: border-box; }
+
+/*-- body styling  --*/
+body {	
+    width: 100vw; 
+    height: 100vh;
+    margin: 0 auto;
+    background-color: black;
+    background-image: url("../images/group1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family:'Work Sans', sans-serif;
+}
+
+#b1 { background-image: url("../images/group2.jpg");background-repeat: no-repeat;background-size:cover; }
+#b2 { background-image: url("../images/group1.jpg");background-repeat: no-repeat;background-size:cover; }
+
+h1{
+    text-align: center;
+    color:white;
+}
+
+/* Slide grid layout */
+.slider {grid-area: slider;}
+.btnRight {grid-area: btnRight;}
+.btnLeft {grid-area: btnLeft;}
+
+.grid-mySlider {
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-areas:'btnLeft slider btnRight';
+  /* grid-gap: 0; */
+  /* background-color:black; */
+  width:80%;
+  margin:0 auto;
+}
+
+.imgWrapper {width:100%}
+.imgWrapper >img{border-top: 6px solid #FDB515; width:16%; height:150px;}
+.imgWrapper img:hover {border: 6px solid #FDB515;}
+
+.btnRight {
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.btnLeft {
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.imgWrapper {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items: center;
+}
+
+/* Image Details grid layout */
+.details { grid-area: details; border:1px solid #FDB515; }
+.lineSpacer { grid-area: lineSpacer; }
+.imgClickedFromSlide { grid-area: imgElement; border:1px solid #FDB515; width:100%; height:350px; object-fit: cover; }
+
+.grid-ImageGallery {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-areas:'details lineSpacer imgElement';
+  width:60%;
+  margin:20px auto;
+}
+
+.imgClickedFromSlide img{width:100%; height:100%;}
+
+.details{
+  color:white;
+}
+
+.labels{
+  color:#FDB515;
+  font-size:100%;  
+}
+
+#full-name{
+  color:#FDB515;
+  font-size:200%;  
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.details > div{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.lineSpacer{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+
+.myline{
+    width: 100%;
+    border-bottom: 1px solid #FDB515;
+}
+
+i{
+    font-size:150%;
+    color:#FDB515;
+}

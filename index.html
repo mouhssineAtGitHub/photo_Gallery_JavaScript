@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<!--  Title goes here  -->		
+		<title>Integrify Academy -- Photo Gallery</title>
+                
+        <!--  meta tag goes here  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				                
+        <!--  fontawosome  -->		
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+                
+        <!--  google Work+Sans  -->		
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+		<!--  CSS stylesheet link  -->		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	
+	<body>
+		<!-- Gallery Title -->
+		<h1>Photo Galery</h1>
+
+		<!-- Slider Grid -->
+		<div class="grid-mySlider">
+
+			<div  class="btnLeft">
+				<i id="btnLeft" class="fa fa-arrow-circle-left"></i>
+			</div>
+
+			<div class="slider">
+				<div id="imgWrapper" class="imgWrapper">
+				</div>
+			</div>
+			<div id="btnRight" class="btnRight">
+				<i class="fa fa-arrow-circle-right"></i>
+			</div>
+
+		</div>
+
+		<!-- Image Gallery Details Grid -->	
+		<div class="grid-ImageGallery">
+			<div id="details" class="details">
+				<div><div id="full-name"> mouh idr</div></div>
+				<div><span class="labels">Joined on: </span><span id="joinedOn"></span></div>
+				<div><span class="labels">Title: </span><span id="title"></span></div>
+				<div><span class="labels">Nationnality: </span><span id="nationality"></span></div>
+				<div><span class="labels">Skills: </span><span id="skills"></span></div>
+				<div><span class="labels">Why softer developer? </span><span id="whySofterDeveloper"></span></div>
+				<div><span class="labels">Long term vision: </span><span id="longTermVision"></span></div>
+				<div><span class="labels">What motivates me? </span><span id="motivatesMe"></span></div>
+				<div><span class="labels">Favorite quote: </span><span id="favoriteQuote"></span></div>
+			</div>
+
+			<div class="lineSpacer">
+				<div class="myline"></div>
+			</div>
+
+			<div id="imgFromSlide" class="imgClickedFromSlide">
+
+			</div>  
+		</div>
+
+		
+		<!-- Javascript functions -->
+		<script src="js/gallery.js"></script>
+		<script src="js/script.js"></script>
+		
+	</body>
+
+</html>
+
